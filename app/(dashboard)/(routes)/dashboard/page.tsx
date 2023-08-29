@@ -7,7 +7,43 @@ import { cn } from "@/lib/utils";
 
 import { ArrowRight } from "lucide-react";
 
-import { tools } from "@/constants";
+import {
+  LinkIcon,
+  BookmarkPlusIcon,
+  SendIcon,
+  ScrollTextIcon,
+} from "lucide-react";
+
+const tools = [
+  {
+    label: "Bookmark",
+    icon: BookmarkPlusIcon,
+    color: "text-violet-500",
+    bgColor: "bg-violet-500/10",
+    href: "/bookmark",
+  },
+  {
+    label: "URL Shortener",
+    icon: LinkIcon,
+    href: "/url-shortener",
+    color: "text-pink-700",
+    bgColor: "bg-pink-500/10",
+  },
+  {
+    label: "Get Whatsapp Link",
+    icon: SendIcon,
+    href: "/whatsapp-link",
+    color: "text-orange-700",
+    bgColor: "bg-orange-700/10",
+  },
+  {
+    label: "All Bookmarks",
+    icon: ScrollTextIcon,
+    href: "/all-bookmarks",
+    color: "text-emerald-500",
+    bgColor: "bg-emerald-700/10",
+  },
+];
 
 const DashboardPage = () => {
   const router = useRouter();

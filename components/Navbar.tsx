@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="w-full bg-white bg-opacity-85 shadow-sm shadow-gray-100 rounded-[2.5rem]">
       <div className="w-full px-[2rem] py-2">
-        <div className="flex">
+        <div className="flex items-center">
           <div className="flex items-end">
             <Image src="/logo.png" alt="logo" width={50} height={50} />
             <span className="text-gray-300">leaf</span>

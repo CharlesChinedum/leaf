@@ -7,12 +7,57 @@ import { usePathname } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
-import { routes } from "@/constants";
+import {
+  LinkIcon,
+  LayoutDashboard,
+  BookmarkPlusIcon,
+  SendIcon,
+  ScrollTextIcon,
+  Settings,
+} from "lucide-react";
 
 const montserrat = Montserrat({
   weight: "600",
   subsets: ["latin"],
 });
+
+const routes = [
+  {
+    label: "Dashboard",
+    icon: LayoutDashboard,
+    href: "/dashboard",
+    color: "text-sky-500",
+  },
+  {
+    label: "BookMark",
+    icon: BookmarkPlusIcon,
+    href: "/bookmark",
+    color: "text-violet-500",
+  },
+  {
+    label: "URL Shortener",
+    icon: LinkIcon,
+    href: "/url-shortener",
+    color: "text-pink-700",
+  },
+  {
+    label: "Get Whatsapp Link",
+    icon: SendIcon,
+    href: "/whatsapp-link",
+    color: "text-orange-700",
+  },
+  {
+    label: "All Bookmarks",
+    icon: ScrollTextIcon,
+    href: "/all-bookmarks",
+    color: "text-emerald-500",
+  },
+  {
+    label: "Settings",
+    icon: Settings,
+    href: "/settings",
+  },
+];
 
 const Sidebar = () => {
   const pathname = usePathname();
