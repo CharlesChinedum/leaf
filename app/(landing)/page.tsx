@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const LandingPage = () => {
   return (
-    <div className="h-full w-full ">
+    <div className="h-full w-full">
       <div className="w-full h-full bg-gray-300 px-5 py-5">
         <div className="h-full w-full bg-gray-100 rounded-[5rem] py-[2rem] px-[2rem] shadow-lg shadow-gray-300">
           <Navbar />

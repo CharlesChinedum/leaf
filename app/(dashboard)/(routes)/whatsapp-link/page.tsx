@@ -1,7 +1,7 @@
 import React from "react";
 
-const page = () => {
-  return <div>page</div>;
+const WhatsappLinkPage = () => {
+  return <div>WhatsappLink</div>;
 };
 
-export default page;
+export default WhatsappLinkPage;

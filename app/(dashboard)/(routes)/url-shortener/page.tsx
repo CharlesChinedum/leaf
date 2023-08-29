@@ -1,7 +1,7 @@
 import React from "react";
 
-const page = () => {
-  return <div>page</div>;
+const UrlShortenerPage = () => {
+  return <div>Url shortener</div>;
 };
 
-export default page;
+export default UrlShortenerPage;
