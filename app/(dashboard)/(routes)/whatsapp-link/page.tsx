@@ -43,7 +43,10 @@ const WhatsappLinkPage = () => {
       />
       <div className="w-full flex justify-center">
         <div className="w-full lg:w-1/2 md:w-[70%]">
-          <Card className="w-full"></Card>
+          <Card className="w-full">
+            <CardHeader>
+            </CardHeader>
+          </Card>
         </div>
       </div>
     </div>
