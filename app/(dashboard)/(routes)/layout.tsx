@@ -2,6 +2,8 @@
 
 import React from "react";
 
+import { Toaster } from "@/components/ui/toaster";
+
 import DashboardNavbar from "@/components/Dashboard-Navbar";
 import Sidebar from "@/components/Sidebar";
 
@@ -22,6 +24,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
               <DashboardNavbar />
             </div>
             {children}
+            <Toaster />
           </main>
         </QueryClientProvider>
       </div>
